@@ -102,7 +102,7 @@ open class FortuneWheelLayer: CALayer  {
         let sectionWidthDegrees = degree(of: slice)
         let kTitleOffset: CGFloat = slice.offsetFromExterior
         let titleXValue: CGFloat = mainFrame.minX + kTitleOffset
-        let kTitleWidth: CGFloat = 0.6
+        let kTitleWidth: CGFloat = 0.5
         let titleWidthCoeficient: CGFloat = sin(sectionWidthDegrees / 2.0 * CGFloat.pi/180)
         let titleWidthValue: CGFloat = (kTitleWidth + titleWidthCoeficient * 0.2) * radius
         let startAngle: CGFloat = 180 + sectionWidthDegrees / 2.0
